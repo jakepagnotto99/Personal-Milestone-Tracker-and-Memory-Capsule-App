@@ -17,10 +17,10 @@ app.use(express.json());
 
 // Routes
 app.use('/api/users', userRoutes);
-app.use('/api/milestones', milestoneRoutes);
+app.use('/api/reactions', reactionRoutes);
 app.use('/api/memoryEntries', memoryEntryRoutes);
 app.use('/api/comments', commentRoutes);
-app.use('/api/reactions', reactionRoutes);
+app.use('/api/milestones', milestoneRoutes);
 
 
 // Start server

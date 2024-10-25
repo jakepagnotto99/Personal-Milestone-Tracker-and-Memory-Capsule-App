@@ -14,8 +14,8 @@ const createMilestone = async (req, res) => {
 // Get All Milestones
 const getMilestones = async (req, res) => {
   try {
-    const milestones = await Milestone.find();
-    res.json(milestones);
+    const reactions = await Milestone.find();
+    res.json(reactions);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

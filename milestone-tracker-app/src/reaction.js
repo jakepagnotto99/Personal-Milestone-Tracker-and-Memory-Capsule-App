@@ -36,9 +36,9 @@ async function fetchReactions() {
       title.textContent = reaction.type;
       reactionDiv.appendChild(title);
   
-      const description = document.createElement('p');
-      description.textContent = reaction.description;
-      reactionDiv.appendChild(description);
+      const user = document.createElement('p');
+      user.textContent = reaction.user_id.username
+      reactionDiv.appendChild(user);
   
       reactionContainer.appendChild(reactionDiv);
     });

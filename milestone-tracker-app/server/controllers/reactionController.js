@@ -27,7 +27,7 @@ const createReaction = async (req, res) => {
 // Get All Reactions
 const getReactions = async (req, res) => {
   try {
-    const reactions = await Reaction.find();
+    const reactions = await Reaction.find().populate("user_id")
     res.json(reactions);
   } catch (error) {
     res.status(500).json({ error: error.message });
